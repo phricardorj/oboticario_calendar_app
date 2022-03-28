@@ -22,6 +22,8 @@ header {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
+  padding: 20px;
 }
 
 header>h1 {
@@ -51,6 +53,10 @@ section.weeks {
   min-height: 200px;
 }
 
+section.weeks>h1 {
+  text-align: center;
+}
+
 section.weeks>.weeks_container {
   display: flex;
   align-items: center;
@@ -78,6 +84,10 @@ section.info {
   padding: 50px;
   min-height: 200px;
   color: #000;
+}
+
+section.info>h1 {
+  text-align: center;
 }
 
 section.info>.info_container {
