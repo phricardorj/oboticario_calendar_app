@@ -22,7 +22,6 @@ header {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
   padding: 20px;
 }
 
@@ -38,6 +37,16 @@ header>p {
   font-weight: bold;
 }
 
+header>p.date {
+  color: #fff;
+  margin: 30px 0;
+  font-weight: 400;
+  letter-spacing: 0.5rem;
+  background: #3d1e4b;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 0.8rem;
+}
 
 section {
   display: flex;
@@ -119,18 +128,18 @@ footer {
 }
 
 footer p {
-  background: #552968;
-  color: #fff;
+  color: #000;
   padding: 20px;
   border-radius: 10px;
+  transition: 0.2s;
 }
 
 footer a {
-  text-decoration: none;
-  color: #4a9d71;
+  text-decoration: underline;
+  color: #0400fd;
   font-weight: bold;
 }
 
 footer a:hover {
-  color: #31cc79;
+  color: #6c6aee;
 }

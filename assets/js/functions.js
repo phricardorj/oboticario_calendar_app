@@ -17,3 +17,7 @@ export const getWeeksFromDateToToday = (date) => {
 export const getElement = (selector) => {
   return document.querySelector(selector);
 };
+
+export const zeroFill = (n) => {
+  return ('0' + n).slice(-2);
+};
