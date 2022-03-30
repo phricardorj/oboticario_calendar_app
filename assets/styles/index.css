@@ -69,6 +69,7 @@ section.weeks {
 
 section.weeks>h1 {
   text-align: center;
+  margin: 0 0 20px;
 }
 
 section.weeks>.weeks_container {
@@ -87,6 +88,7 @@ section.weeks>.weeks_container>div {
   font-size: 28px;
   margin: 10px;
   text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
 }
 
 section.weeks>.weeks_container>div>span {
@@ -100,10 +102,12 @@ section.info {
   padding: 50px;
   min-height: 200px;
   color: #000;
+  background: #e7e7e7;
 }
 
 section.info>h1 {
   text-align: center;
+  margin: 0 0 20px;
 }
 
 section.info>.info_container {
@@ -122,6 +126,7 @@ section.info>.info_container>div {
   font-size: 28px;
   margin: 10px;
   text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
 }
 
 section.info>.info_container>div>span {
