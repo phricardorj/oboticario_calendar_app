@@ -17,7 +17,7 @@ setInterval(() => {
   const now = new Date();
 
   const dataHora =
-    zeroFill(now.getUTCDate()) +
+    zeroFill(now.getDate()) +
     '/' +
     zeroFill(now.getMonth() + 1) +
     '/' +
