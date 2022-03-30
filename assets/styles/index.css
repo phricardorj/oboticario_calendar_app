@@ -17,6 +17,10 @@ header {
   width: 100%;
   height: 30vh;
   background: #552968;
+  background-image: url('../images/banner.jpg');
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
   color: #fff;
   display: flex;
   align-items: center;
@@ -75,6 +79,7 @@ section.weeks>.weeks_container {
 
 section.weeks>.weeks_container>div {
   background: #552968;
+  background-image: linear-gradient(#552968, #233f30);
   padding: 20px;
   border-radius: 10px;
   color: #ffffff;
@@ -85,6 +90,7 @@ section.weeks>.weeks_container>div {
 
 section.weeks>.weeks_container>div>span {
   color: #4a9d71;
+  font-weight: bold;
 }
 
 /*-- Info Section --*/
@@ -108,6 +114,7 @@ section.info>.info_container {
 
 section.info>.info_container>div {
   background: #3d1e4b;
+  background-image: linear-gradient(#552968, #233f30);
   padding: 20px;
   border-radius: 10px;
   color: #fff;
