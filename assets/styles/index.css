@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
@@ -17,7 +17,7 @@ header {
   width: 100%;
   height: 30vh;
   background: #552968;
-  background-image: url('../images/banner.jpg');
+  background-image: url("../images/banner.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -29,19 +29,19 @@ header {
   padding: 20px;
 }
 
-header>h1 {
+header > h1 {
   text-align: center;
   font-size: 1.8rem;
   margin: 10px;
 }
 
-header>p {
+header > p {
   text-align: center;
   color: #4a9d71;
   font-weight: bold;
 }
 
-header>p.date {
+header > p.date {
   color: #fff;
   margin: 30px 0;
   font-weight: 400;
@@ -67,19 +67,19 @@ section.weeks {
   min-height: 200px;
 }
 
-section.weeks>h1 {
+section.weeks > h1 {
   text-align: center;
   margin: 0 0 20px;
 }
 
-section.weeks>.weeks_container {
+section.weeks > .weeks_container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-section.weeks>.weeks_container>div {
+section.weeks > .weeks_container > div {
   background: #552968;
   background-image: linear-gradient(#552968, #233f30);
   padding: 20px;
@@ -91,7 +91,7 @@ section.weeks>.weeks_container>div {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
 }
 
-section.weeks>.weeks_container>div>span {
+section.weeks > .weeks_container > div > span {
   color: #4a9d71;
   font-weight: bold;
 }
@@ -105,19 +105,19 @@ section.info {
   background: #e7e7e7;
 }
 
-section.info>h1 {
+section.info > h1 {
   text-align: center;
   margin: 0 0 20px;
 }
 
-section.info>.info_container {
+section.info > .info_container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-section.info>.info_container>div {
+section.info > .info_container > div {
   background: #3d1e4b;
   background-image: linear-gradient(#552968, #233f30);
   padding: 20px;
@@ -129,7 +129,7 @@ section.info>.info_container>div {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
 }
 
-section.info>.info_container>div>span {
+section.info > .info_container > div > span {
   color: #4a9d71;
 }
 
@@ -150,7 +150,7 @@ footer {
   position: relative;
 }
 
-footer>.btn {
+footer > .btn {
   padding: 10px;
   outline: 0;
   border: 0;
@@ -166,7 +166,7 @@ footer>.btn {
   animation: pulseShadow 2s infinite;
 }
 
-footer>.btn:hover {
+footer > .btn:hover {
   background: #5d5be0;
 }
 
@@ -176,18 +176,18 @@ footer p {
   transition: 0.2s;
 }
 
-footer>p.credits {
+footer > p.credits {
   position: absolute;
   bottom: 0;
 }
 
-footer>p.credits>a {
+footer > p.credits > a {
   color: #5dc58e;
   text-decoration: none;
   transition: 0.2s;
 }
 
-footer>p.credits>a:hover {
+footer > p.credits > a:hover {
   color: #4a9d71;
   text-decoration: none;
 }
@@ -226,9 +226,7 @@ footer>p.credits>a:hover {
   }
 }
 
-
-@media (max-width: 500px)
-{
+@media (max-width: 500px) {
   header {
     width: 100%;
     height: 50vh;
@@ -236,7 +234,123 @@ footer>p.credits>a:hover {
   footer {
     height: 500px;
   }
-  header>p.date {
+  header > p.date {
     font-size: 0.5rem;
+  }
+}
+
+/*--------------------------------------------------------------
+# basic modal style
+--------------------------------------------------------------*/
+.modal_fundo {
+  height: 100%;
+  width: 100%;
+
+  background: rgb(0, 0, 0, 0.7);
+  position: fixed;
+  visibility: hidden;
+  z-index: 999;
+}
+
+.modal_fundo > .close {
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  background: #b650e2;
+  color: #fff;
+  border: 2px solid #000;
+  cursor: pointer;
+}
+
+.modal_container {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  transition: 0.2s;
+
+  z-index: 999;
+}
+
+.modal_container > .modal {
+  background: #fff;
+  box-shadow: 0 0 20px #000;
+  height: relative;
+  max-height: 715px;
+  padding: 20px;
+
+  width: 95%;
+  max-width: 718px;
+  border-radius: 20px;
+
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal_container > .modal h1 {
+  font-size: 1.5rem;
+  color: #552968;
+  margin-bottom: 20px;
+}
+
+.modal_container > .modal > .container {
+  height: 95%;
+  width: 95%;
+  overflow: auto;
+  padding: 15px;
+}
+
+.modal_container > .modal p {
+  margin: 20px 0 20px;
+}
+
+.modal_container > .modal img {
+  min-width: 100%;
+  max-width: 600px;
+  height: 100%;
+  max-height: 400px;
+  border-radius: 10px;
+  margin: 0 0 20px;
+}
+
+/* width */
+.modal_container ::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.modal_container ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* Handle */
+.modal_container ::-webkit-scrollbar-thumb {
+  background: rgb(126, 126, 126);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.modal_container ::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@media (max-width: 600px) {
+  .modal_container > .modal {
+    padding: 10px;
+  }
+  .modal_container > .modal img {
+    max-width: 100%;
+  }
+  .modal_container > .modal h1 {
+    font-size: 1.1rem;
   }
 }
