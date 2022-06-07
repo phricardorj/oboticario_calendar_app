@@ -133,6 +133,11 @@ section.info > .info_container > div > span {
   color: #4a9d71;
 }
 
+section.info > p.important {
+  font-size: 18px;
+  text-align: center;
+}
+
 /*-- Footer --*/
 footer {
   display: flex;
