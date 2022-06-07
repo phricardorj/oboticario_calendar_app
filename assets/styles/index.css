@@ -136,6 +136,7 @@ section.info > .info_container > div > span {
 section.info > p.important {
   font-size: 18px;
   text-align: center;
+  margin: 10px 0;
 }
 
 /*-- Footer --*/
