@@ -32,4 +32,4 @@ setInterval(() => {
   getElement("#data-hora").innerText = dataHora;
 }, 1000);
 
-modalOpen(true);
+modalOpen(false);
