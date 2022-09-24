@@ -67,7 +67,7 @@ const modalCreate = () => {
     que faltam apenas <strong>${idiomasWeeks} semanass</strong> para 16 de Outubro!</p>
 
     <p>Esse link será desativado no dia 28 de Outubro, fico feliz que uma galera usou hein!! Boa haha!</p>
-    <img src="https://desenvolve.vercel.app/assets/images/grafico.png">
+    <img src="assets/images/grafico.png">
     `;
 
     e.innerHTML = `<div class="modal_fundo"><div class="close">❌ Fechar</div></div><div class="modal_container"><div class="modal"><div class="container">${content}</div></div></div>`;
