@@ -60,12 +60,14 @@ const modalCreate = () => {
     let idiomasWeeks = getWeeksFromDateToToday('2022-10-16');
 
     let content = `
-    <h1>Parabéns! 🎉<br> Falta pouco para sua formatura, né?</h1>
+    <h1>Parabéns! 🎉 Falta pouco para sua formatura, né?</h1>
     <p>NÃO ESQUEÇA <strong>de concluir 70% dos cursos na Alura para participar da Formatura e obter seu certificado!</strong></p>
     <p> Todos os alunos que concluírem o programa (aqueles que cumprirem no mínimo 70% da carga horária até o dia 16 de outubro) 
     receberão uma uma <strong>bolsa de 2 meses de estudos na plataforma de idiomas Alura Línguas</strong> (início em Jan/2023). <br><br>⚠️ Lembrando 
-    que faltam apenas <strong>${idiomasWeeks} semanass</strong> para 16 de Outubro!
-    </p>
+    que faltam apenas <strong>${idiomasWeeks} semanass</strong> para 16 de Outubro!</p>
+
+    <p>Esse link será desativado no dia 28 de Outubro, fico feliz que uma galera usou hein!! Boa haha!</p>
+    <img src="https://desenvolve.vercel.app/assets/images/grafico.png">
     `;
 
     e.innerHTML = `<div class="modal_fundo"><div class="close">❌ Fechar</div></div><div class="modal_container"><div class="modal"><div class="container">${content}</div></div></div>`;
